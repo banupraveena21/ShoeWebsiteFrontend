@@ -6,7 +6,7 @@ const CartContext = createContext();
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
-  const BASE = "http://127.0.0.1:8000";
+  const BASE = "https://shoewebsitebackend.onrender.com";
 
   // init
   useEffect(() => {

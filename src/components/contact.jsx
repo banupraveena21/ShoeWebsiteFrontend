@@ -18,7 +18,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8000/api/enquiry/', {
+      const response = await fetch('https://shoewebsitebackend.onrender.com/api/enquiry/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

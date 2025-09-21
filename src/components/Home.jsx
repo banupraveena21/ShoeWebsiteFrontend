@@ -78,7 +78,7 @@ const Home = () => {
   // Helper for image url
   const getImageUrl = (url) => {
     if (!url) return "/images/placeholder.png";
-    return url.startsWith("http") ? url : `http://localhost:8000${url}`;
+    return url.startsWith("http") ? url : `https://shoewebsitebackend.onrender.com${url}`;
   };
 
   // Collect all products

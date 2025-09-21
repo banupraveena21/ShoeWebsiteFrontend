@@ -14,7 +14,7 @@ export default function Register() {
     e.preventDefault()
     if(!agree){ setError('You must agree to terms'); return }
     try{
-      await axios.post('http://127.0.0.1:8000/api/register/',{
+      await axios.post('https://shoewebsitebackend.onrender.com/api/register/',{
         username,email,password
       })
       navigate('/login')

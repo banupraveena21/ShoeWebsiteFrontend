@@ -4,7 +4,7 @@ export default function About() {
   const [aboutData, setAboutData] = useState({ about: "", mission: "" });
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/about/")
+    fetch("https://shoewebsitebackend.onrender.com/api/about/")
       .then((res) => res.json())
       .then((data) => setAboutData(data))
       .catch((err) => console.error("Error fetching about data:", err));

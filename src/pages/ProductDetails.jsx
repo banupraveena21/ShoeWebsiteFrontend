@@ -12,7 +12,7 @@ export default function ProductDetails() {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/products/${slug}/`)
+    fetch(`https://shoewebsitebackend.onrender.com/api/products/${slug}/`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

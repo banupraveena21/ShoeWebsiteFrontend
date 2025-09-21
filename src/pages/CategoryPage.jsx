@@ -21,8 +21,8 @@ export default function CategoryPage() {
   useEffect(() => {
     setLoading(true);
     const url = slug
-      ? `http://localhost:8000/api/products/?category=${encodeURIComponent(slug)}`
-      : `http://localhost:8000/api/products/`;
+      ? `https://shoewebsitebackend.onrender.com/api/products/?category=${encodeURIComponent(slug)}`
+      : `https://shoewebsitebackend.onrender.com/api/products/`;
 
     fetch(url)
       .then((r) => r.json())
